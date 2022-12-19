@@ -3,8 +3,9 @@ import GameSavingLoader from './gamesavingloader';
 (async () => {
   try {
     const saving = await GameSavingLoader();
-    return saving;
+    /* eslint-disable */
+    console.log(saving);    
   } catch (err) {
-    throw new Error();
+    throw new Error('Ошибка!');
   }
 })();
